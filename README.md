@@ -522,7 +522,7 @@ else:
 The Power BI dashboard is built on top of the **Gold layer**, enabling direct access to clean, business-ready data for reporting and analysis.
 ---
 
-![Power BI Dashboard](./image.png)
+![Power BI Dashboard](project_dashboard_page.jpg)
 
 ## 📌 Key Metrics
 
@@ -562,7 +562,62 @@ The Power BI dashboard is built on top of the **Gold layer**, enabling direct ac
 
 ---
 
-   
+## 🏁 Project Conclusion
+
+This project successfully demonstrates the design and implementation of a **modern, scalable data engineering pipeline** using the Medallion Architecture on Azure Databricks.
+
+By transforming fragmented raw data into **clean, structured, and analytics-ready datasets**, the pipeline establishes a **single source of truth** for business reporting. The integration with Power BI enables stakeholders to derive insights in near real-time, significantly improving decision-making efficiency.
+
+The solution showcases how a well-architected data platform can:
+- streamline data ingestion and processing,
+- enforce data quality and consistency,
+- and deliver high-performance analytical datasets.
+
+Overall, this project reflects a **real-world production use case** of building a robust lakehouse-based data platform.
+
+---
+
+## 📚 Key Learnings
+
+Throughout this project, several important data engineering concepts and practices were applied:
+
+- **Medallion Architecture (Bronze → Silver → Gold)** for layered data processing  
+- **Streaming ingestion using Auto Loader** for scalable file-based pipelines  
+- **Checkpointing and fault tolerance** in Structured Streaming  
+- **Change Data Feed (CDF)** for incremental data processing  
+- **MERGE-based upserts** to ensure idempotent data loads  
+- **Schema evolution handling** to manage dynamic data sources  
+- **Data modeling using Star Schema** for analytical workloads  
+- **Performance optimization techniques** like clustering and aggregation tables  
+- **End-to-end pipeline orchestration** using Databricks workflows  
+
+---
+
+## ⚠️ Challenges & Solutions
+
+| Challenge | Solution |
+|----------|----------|
+| Duplicate processing risk in streaming | Implemented checkpointing |
+| Schema changes in incoming files | Used schema evolution with rescue mode |
+| Handling updates in streaming data | Used Change Data Feed (CDF) |
+| Ensuring no duplicate records | Implemented MERGE-based upserts |
+| Partition mismatch errors | Reset checkpoint and standardized configuration |
+
+---
+
+## 💡 Final Thoughts
+
+This project highlights the transition from **traditional ETL pipelines to modern data engineering practices** using a lakehouse architecture.
+
+It not only demonstrates technical implementation but also emphasizes:
+- scalability,
+- reliability,
+- and business impact.
+
+Such architectures form the backbone of **data-driven organizations**, enabling faster insights and better strategic decisions.
+
+---
+Feel free to ⭐ the repo if you found this useful!
 
 
 
