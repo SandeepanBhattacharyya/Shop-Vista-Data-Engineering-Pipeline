@@ -505,11 +505,11 @@ else:
 
 ## 🔄 End-to-End Pipeline Workflow
 1. Parent_job: (daily_refresh)
-![daily_refresh](./image.png)
+![daily_refresh](job1.PNG)
 
 2. daily_refresh = daily_refresh_dim + daily_refresh_fact
-![daily_refresh_dim](./image.png)
-![daily_refresh_fact](./image.png)
+![daily_refresh_dim](job1_i.PNG)
+![daily_refresh_fact](job1_ii.PNG)
 
 ## ⚙️ Connecting to the Power BI Dashboard
 - Connect the Power BI desktop to Azure databricks by filling the details in the connector.
